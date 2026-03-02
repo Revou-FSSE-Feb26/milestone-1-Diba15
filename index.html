@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 1 - Mini Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- make website responsive with meta viewport -->
+    <link rel="stylesheet" href="assets/main.css"> <!-- import style from main.css -->
+</head>
+<body>
+
+<!--Header Navbar-->
+<header id="header">
+    <nav id="navbar">
+        <a onclick="activeNav(this)" class="active" href="#home">Home</a>
+        <a onclick="activeNav(this)" href="#about">About Me</a>
+        <a onclick="activeNav(this)" href="#projects">Projects</a>
+        <a onclick="activeNav(this)" href="#contacts">Contact Me</a>
+    </nav>
+    <!--    Hero section    -->
+
+</header>
+
+<!--Contents-->
+<main id="contents">
+    <!-- Home Section   -->
+    <section id="home">
+        <h1>Hello everyone, welcome to my mini resume.</h1>
+        <p class="paragraph">Hi, I'm <span class="highlight-text">Dimas Bagas Saputro</span>. I recently graduated from
+            Telkom University
+            with a degree in
+            Informatics, maintaining a 3.69 GPA. As a web enthusiast with a passion for front-end development, I am
+            currently dedicated to sharpening my technical skills and expanding my professional portfolio. <br>
+        </p>
+        <p class="paragraph">I have a little bit of experiences at <span
+                class="highlight-text">Frontend Developer</span> in <span class="highlight-text">Tourism industry</span>.
+            Focused with technologies like
+            Laravel, MySQL, and Bootstrap. Also, I have Intern experience as <span class="highlight-text">Technical Writer</span>
+            at <span class="highlight-text">Oil and Gas Industry</span>.
+        </p>
+    </section>
+    <!--  About Section  -->
+    <section id="about">
+        <h1>About Me</h1>
+        <div id="profile">
+            <img id="prof-pict" src="assets/pictures/profile.png" alt="Profile Pictures">
+            <p class="paragraph">
+                Greetings, my name is <span class="highlight-text">Dimas Bagas Saputro</span>, and I hold a Bachelor’s
+                degree in Informatics Engineering
+                from
+                Telkom University. I possess a keen interest and am presently dedicating my efforts towards the domains
+                of
+                <span class="highlight-text">Frontend Web Development</span> and <span class="highlight-text">Backend Web Development</span>.
+            </p>
+        </div>
+        <div id="skills-interest">
+            <div id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-interest-container">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Vue.js</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <div id="interest">
+                <h2>Interests</h2>
+                <ul class="skills-interest-container">
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Data Analysis</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </div>
+        </div>
+        <div id="work">
+            <h2>Work Experiences</h2>
+            <div id="work-list">
+                <div class="card-work">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h3>Frontend Developer</h3>
+                            <p class="highlight-text">SIMBARRAYA</p>
+                        </div>
+                        <p>2023 - 2024</p>
+                    </div>
+                    <p>In this role, I was entrusted with the duties of a Front End Developer, overseeing the visual
+                        design of the website to be developed. The website was constructed utilizing Laravel and
+                        Bootstrap as its foundational frameworks.</p>
+                </div>
+                <div class="card-work">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h3>Technical Writer</h3>
+                            <p class="highlight-text">BPH MIGAS</p>
+                        </div>
+                        <p>2021 - 2022</p>
+                    </div>
+                    <p>During this internship, I was entrusted with the role of Technical Writer. My responsibilities
+                        included the development of dashboards and the automation of reporting through the use of
+                        Tableau. Additionally, I was tasked with performing low-level testing, data cleansing and
+                        migration, as well as the documentation of model data and application flow logic at BPH Migas,
+                        utilizing Laravel and SQL in my work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
