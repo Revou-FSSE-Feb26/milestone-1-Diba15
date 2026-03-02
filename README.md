@@ -8,6 +8,7 @@ employers.
 
 ## ✨ Github Pages
 
+### Preview Web: [Click here!](https://revou-fsse-feb26.github.io/milestone-1-Diba15/)
 
 ---
 
@@ -28,8 +29,8 @@ employers.
 
 ## 📸 Screenshots
 
-| Image                                               | Description |
-|-----------------------------------------------------|-------------|
+| Image                                                      | Description |
+|------------------------------------------------------------|-------------|
 | ![Screenshot of the resume](assets/pictures/preview-1.png) | Home        |
 | ![Screenshot of the resume](assets/pictures/preview-2.png) | About       |
 | ![Screenshot of the resume](assets/pictures/preview-3.png) | Projects    |
