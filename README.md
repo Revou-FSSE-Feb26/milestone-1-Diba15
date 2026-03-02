@@ -39,9 +39,10 @@ employers.
 
 ```bash
 module1/
-|-- pictures/    #Pictures Folder
+|-- assets/  # Assets Folder
+|   |-- pictures/ # Pictures Folder
+|   |-- main.css
+|   |-- index.js
 |-- index.html
-|-- style.css
-|-- index.js
 |__ README.md
 ```
