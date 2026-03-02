@@ -30,10 +30,10 @@ employers.
 
 | Image                                               | Description |
 |-----------------------------------------------------|-------------|
-| ![Screenshot of the resume](pictures/preview-1.png) | Home        |
-| ![Screenshot of the resume](pictures/preview-2.png) | About       |
-| ![Screenshot of the resume](pictures/preview-3.png) | Projects    |
-| ![Screenshot of the resume](pictures/preview-4.png) | Contact     |
+| ![Screenshot of the resume](assets/pictures/preview-1.png) | Home        |
+| ![Screenshot of the resume](assets/pictures/preview-2.png) | About       |
+| ![Screenshot of the resume](assets/pictures/preview-3.png) | Projects    |
+| ![Screenshot of the resume](assets/pictures/preview-4.png) | Contact     |
 
 ## 📂 Project Structure
 
