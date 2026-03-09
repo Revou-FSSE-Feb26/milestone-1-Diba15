@@ -46,7 +46,7 @@ employers.
 module1/
 |-- assets/  # Assets Folder
 |   |-- pictures/ # Pictures Folder
-|   |-- main.css
+|   |-- index.css
 |   |-- index.js
 |-- index.html
 |__ README.md

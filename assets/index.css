@@ -201,6 +201,11 @@ section {
     transition: background-color 0.3s ease;
 }
 
+/*Add for assignment milestone 2*/
+.btn_preview:hover {
+    opacity: 0.8;
+}
+
 .btn_github {
     background-color: transparent;
     color: var(--main-color);
@@ -209,6 +214,12 @@ section {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*Add for assignment milestone 2*/
+.btn_github:hover {
+    background-color: var(--main-color);
+    color: white;
 }
 
 /*Contacts Styling*/
