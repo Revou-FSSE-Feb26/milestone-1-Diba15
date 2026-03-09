@@ -260,6 +260,7 @@ input:focus, textarea:focus {
     outline: none;
     border-color: var(--main-color);
     box-shadow: 0 0 5px rgba(34, 139, 34, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 textarea {
