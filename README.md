@@ -14,10 +14,14 @@ employers.
 
 ## 🚀 Features
 
-| Feature                 | Description                                                                                                                       |
-|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Responsive Design       | The resume is designed to be responsive, meaning it will look great on any device, whether it's a desktop, tablet, or smartphone. |
-| Clean and Modern Layout | The resume features a clean and modern layout that is easy to read                                                                |
+| Feature                      | Description                                                                                                                              |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Responsive Design            | The resume is designed to be responsive, meaning it will look great on any device, whether it's a desktop, tablet, or smartphone.        |
+| Clean and Modern Layout      | The resume features a clean and modern layout that is easy to read                                                                       |
+| Interactive Navbar           | The resume includes an interactive navbar that allows users to easily navigate through different sections of the resume.                 |
+| Smooth Scrolling             | The resume includes smooth scrolling functionality, providing a seamless user experience when navigating through the different sections. |
+| Hover Effects                | The resume includes hover effects on various elements, such as buttons and links, to enhance interactivity and visual appeal.            |
+| Contact Form with Validation | The resume includes a contact form that allows users to easily get in touch with the resume owner.                                       |
 
 ---
 
