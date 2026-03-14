@@ -9,7 +9,8 @@
     <meta name="description"
           content="Mini resume of Dimas Bagas Saputro, a web enthusiast with a passion for front-end development. Explore my skills, projects, and contact information.">
     <meta name="author" content="Dimas Bagas Saputro">
-    <meta name="keywords" content="Dimas Bagas Saputro, mini resume, web development, front-end development, projects, contact information">
+    <meta name="keywords"
+          content="Dimas Bagas Saputro, mini resume, web development, front-end development, projects, contact information">
     <!-- import style from index.css -->
     <link rel="stylesheet" href="assets/index.css">
 </head>
@@ -17,33 +18,40 @@
 
 <!--Header Navbar-->
 <header id="header">
+    <div id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <nav id="navbar">
         <a onclick="activeNav(this)" class="active" href="#home">Home</a>
         <a onclick="activeNav(this)" href="#about">About Me</a>
         <a onclick="activeNav(this)" href="#projects">Projects</a>
         <a onclick="activeNav(this)" href="#contacts">Contact Me</a>
     </nav>
-    <!--    Hero section    -->
-
 </header>
 
 <!--Contents-->
 <main id="contents">
     <!-- Home Section   -->
     <section id="home">
-        <h1>Hello everyone, <br> <span>Welcome to my mini resume.</span></h1>
-        <p class="paragraph">Hi, I'm <span class="highlight-text">Dimas Bagas Saputro</span>. I recently graduated from
-            Telkom University
-            with a degree in
-            Informatics, maintaining a 3.69 GPA. As a web enthusiast with a passion for front-end development, I am
-            currently dedicated to sharpening my technical skills and expanding my professional portfolio. <br>
-        </p>
-        <p class="paragraph">I have a little bit of experiences as <span
-                class="highlight-text">Frontend Developer</span> in <span class="highlight-text">Tourism industry</span>.
-            Focused with technologies like
-            Laravel, MySQL, and Bootstrap. Also, I have Intern experience as <span class="highlight-text">Technical Writer</span>
-            at <span class="highlight-text">Oil and Gas Industry</span>.
-        </p>
+        <h1 id="welcome_greet">Hello everyone, <br> <span>Welcome to my mini resume.</span></h1>
+        <div id="home-profile">
+            <p class="paragraph">Hi, I'm <span class="highlight-text">Dimas Bagas Saputro</span>. I recently graduated
+                from
+                Telkom University
+                with a degree in
+                Informatics, maintaining a 3.69 GPA. As a web enthusiast with a passion for front-end development, I am
+                currently dedicated to sharpening my technical skills and expanding my professional portfolio. <br>
+            </p>
+            <p class="paragraph">I have a little bit of experiences as <span
+                    class="highlight-text">Frontend Developer</span> in <span
+                    class="highlight-text">Tourism industry</span>.
+                Focused with technologies like
+                Laravel, MySQL, and Bootstrap. Also, I have Intern experience as <span class="highlight-text">Technical Writer</span>
+                at <span class="highlight-text">Oil and Gas Industry</span>.
+            </p>
+        </div>
     </section>
 
     <!--  About Section  -->
@@ -125,6 +133,16 @@
                     the backend. The application helps businesses manage products, suppliers, warehouses, and reports
                     efficiently. With real-time updates and secure data storage, it ensures that inventory information
                     is always accurate and accessible.</p>
+                <div class="show_more">
+                    <div onclick="toggleShowMore(this)">
+                        <p class="show_more_text">Show More</p>
+                        <span class="show_more_icon">&#9660;</span>
+                    </div>
+                    <div onclick="toggleShowLess(this)">
+                        <p class="show_less_text">Show Less</p>
+                        <span class="show_less_icon">&#9650;</span>
+                    </div>
+                </div>
                 <div class="btn-list">
                     <a href="https://inventaris-app-eight.vercel.app/" target="_blank" class="btn_preview">View
                         Project</a>
@@ -136,6 +154,16 @@
                 <p>Task management built using Vue.js and styled with Tailwind CSS. The application utilizes browser
                     local storage for data persistence, meaning your tasks are saved directly in your browser. This
                     allows your todos to remain accessible even after closing or refreshing the browser.</p>
+                <div class="show_more">
+                    <div onclick="toggleShowMore(this)">
+                        <p class="show_more_text">Show More</p>
+                        <span class="show_more_icon">&#9660;</span>
+                    </div>
+                    <div onclick="toggleShowLess(this)">
+                        <p class="show_less_text">Show Less</p>
+                        <span class="show_less_icon">&#9650;</span>
+                    </div>
+                </div>
                 <div class="btn-list">
                     <a href="https://todos-app-peach.vercel.app/" target="_blank" class="btn_preview">View
                         Project</a>
