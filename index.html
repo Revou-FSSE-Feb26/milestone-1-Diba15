@@ -1,203 +1,323 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
     <title>Module 1 - Mini Resume</title>
     <!-- make website responsive with meta viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- meta SEO -->
     <meta name="description"
-          content="Mini resume of Dimas Bagas Saputro, a web enthusiast with a passion for front-end development. Explore my skills, projects, and contact information.">
-    <meta name="author" content="Dimas Bagas Saputro">
+      content="Mini resume of Dimas Bagas Saputro, a web enthusiast with a passion for front-end development. Explore my skills, projects, and contact information." />
+    <meta name="author" content="Dimas Bagas Saputro" />
     <meta name="keywords"
-          content="Dimas Bagas Saputro, mini resume, web development, front-end development, projects, contact information">
+      content="Dimas Bagas Saputro, mini resume, web development, front-end development, projects, contact information" />
     <!-- import style from index.css -->
-    <link rel="stylesheet" href="assets/index.css">
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      :root {
+        --main-color: darkgreen;
+        --sub-color: #4caf50;
+        --bg-color: #f5f4fc;
+        --text-color: #474747;
+        --dark-color: #1e293b;
+      }
 
-<!--Header Navbar-->
-<header id="header">
-    <div id="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <nav id="navbar">
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .highlight-text {
+        color: var(--main-color);
+        font-weight: bold;
+      }
+
+      #navbar a.active {
+        font-weight: bold;
+        color: var(--main-color);
+      }
+
+      #navbar a.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[var(--bg-color)] flex flex-col gap-4 text-[var(--text-color)]">
+    <!--Header Navbar-->
+    <header id="header" class="sticky top-0 bg-white/80 z-10 p-4">
+      <nav id="navbar"
+        class="flex gap-4 justify-center *:hover:text-[var(--main-color)] transition-colors duration-300 flex-wrap">
         <a onclick="activeNav(this)" class="active" href="#home">Home</a>
         <a onclick="activeNav(this)" href="#about">About Me</a>
         <a onclick="activeNav(this)" href="#projects">Projects</a>
         <a onclick="activeNav(this)" href="#contacts">Contact Me</a>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!--Contents-->
-<main id="contents">
-    <!-- Home Section   -->
-    <section id="home">
-        <h1 id="welcome_greet">Hello everyone, <br> <span>Welcome to my mini resume.</span></h1>
-        <div id="home-profile">
-            <p class="paragraph">Hi, I'm <span class="highlight-text">Dimas Bagas Saputro</span>. I recently graduated
-                from
-                Telkom University
-                with a degree in
-                Informatics, maintaining a 3.69 GPA. As a web enthusiast with a passion for front-end development, I am
-                currently dedicated to sharpening my technical skills and expanding my professional portfolio. <br>
+    <!--Contents-->
+    <main id="contents" class="p-4 max-w-4xl mx-auto flex flex-col gap-8">
+      <!-- Home Section   -->
+      <section id="home">
+        <h1 id="welcome_greet" class="text-4xl/15 font-bold mb-4">
+          Hello everyone, <br />
+          <span>Welcome to my mini resume.</span>
+        </h1>
+        <div id="home-profile" class="flex flex-col gap-4 items-center">
+          <p class="text-md/20 indent-4 text-justify">
+            Hi, I'm <span class="highlight-text">Dimas Bagas Saputro</span>. I
+            recently graduated from Telkom University with a degree in
+            Informatics, maintaining a 3.69 GPA. As a web enthusiast with a
+            passion for front-end development, I
+            am currently dedicated to sharpening my technical skills and
+            expanding my professional portfolio. <br />
+          </p>
+          <p class="text-md/20 indent-4 text-justify">
+            I have a little bit of experiences as <span
+              class="highlight-text">Frontend Developer</span> in <span
+              class="highlight-text">Tourism industry</span>. Focused with
+            technologies like Laravel, MySQL, and Bootstrap. Also, I have
+            Intern experience as <span class="highlight-text">Technical
+              Writer</span> at <span class="highlight-text">Oil and Gas
+              Industry</span>.
+          </p>
+        </div>
+      </section>
+
+      <!--  About Section  -->
+      <section id="about" class="flex flex-col gap-8">
+        <h2 class="text-xl font-bold">About Me</h2>
+        <div id="profile" class="flex flex-col gap-4 items-center text-justify">
+          <img id="prof-pict"
+            class="rounded-full w-[200px] h-[200px] object-cover shadow-lg md:w-[250px] md:h-[250px] "
+            src="assets/pictures/profile.png" alt="Profile Pictures" />
+          <p class="text-md/20 indent-4">
+            Greetings, my name is <span class="highlight-text">Dimas Bagas
+              Saputro</span>, and I hold a Bachelor's degree in Informatics
+            Engineering from Telkom University. I possess a keen interest and am
+            presently dedicating my efforts
+            towards the domains of <span class="highlight-text">Frontend Web
+              Development</span> and <span class="highlight-text">Backend Web
+              Development</span>.
+          </p>
+        </div>
+        <div id="skills-interest" class="flex flex-col gap-8">
+          <div id="skills" class="flex flex-col gap-4">
+            <h2 class="text-lg font-bold">Skills</h2>
+            <ul
+              class="flex flex-col gap-2 list-[japanese-informal] list-inside bg-gray-200 p-4 rounded-lg">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Vue.js</li>
+              <li>Laravel</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div id="interest" class="flex flex-col gap-4">
+            <h2 class="text-lg font-bold">Interests</h2>
+            <ul
+              class="flex flex-col gap-2 list-[japanese-informal] list-inside bg-gray-200 p-4 rounded-lg">
+              <li>Web Development</li>
+              <li>UI/UX Design</li>
+              <li>Data Analysis</li>
+              <li>Machine Learning</li>
+            </ul>
+          </div>
+        </div>
+        <div id="work" class="flex flex-col gap-4">
+          <h2 class="text-lg font-bold">Work Experiences</h2>
+          <div id="work-list" class="flex flex-col gap-4">
+            <div class="bg-gray-200 p-4 rounded-lg">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h3 class="font-bold">Frontend Developer</h3>
+                  <p class="highlight-text">SIMBARRAYA</p>
+                </div>
+                <p>2023 - 2024</p>
+              </div>
+              <p class="text-justify">
+                In this role, I was entrusted with the duties of a Front End
+                Developer, overseeing the visual design of the website to be
+                developed. The website was constructed utilizing Laravel and
+                Bootstrap as its foundational frameworks.
+              </p>
+            </div>
+            <div class="bg-gray-200 p-4 rounded-lg">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h3 class="font-bold">Technical Writer</h3>
+                  <p class="highlight-text">BPH MIGAS</p>
+                </div>
+                <p>2021 - 2022</p>
+              </div>
+              <p class="text-justify">
+                During this internship, I was entrusted with the role of
+                Technical Writer. My responsibilities included the development
+                of dashboards and the automation of reporting through the use of
+                Tableau. Additionally, I was tasked
+                with performing low-level testing, data cleansing and migration,
+                as well as the documentation of model data and application flow
+                logic at BPH Migas, utilizing Laravel and SQL in my work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  Projects Section  -->
+      <section id="projects" class="flex flex-col gap-4">
+        <h2 class="text-xl font-bold">Projects</h2>
+        <div id="project-list"
+          class="grid grid-cols-2 gap-4 md:grid md:grid-cols-3 *:flex *:flex-col *:justify-between *:*gap-4 [&_p]:line-clamp-3">
+          <div
+            class="card-project bg-gray-200 p-4 rounded-lg">
+            <h3 class="font-bold">Inventaris Apps</h3>
+            <p class="text-justify">
+              Inventory management system built using Vue.js, styled with
+              Tailwind CSS, and powered by Strapi as the backend. The
+              application helps businesses manage products, suppliers,
+              warehouses, and reports efficiently. With real-time
+              updates and secure data storage, it ensures that inventory
+              information is always accurate and accessible.
             </p>
-            <p class="paragraph">I have a little bit of experiences as <span
-                    class="highlight-text">Frontend Developer</span> in <span
-                    class="highlight-text">Tourism industry</span>.
-                Focused with technologies like
-                Laravel, MySQL, and Bootstrap. Also, I have Intern experience as <span class="highlight-text">Technical Writer</span>
-                at <span class="highlight-text">Oil and Gas Industry</span>.
+            <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+              <a href="https://inventaris-app-eight.vercel.app/" target="_blank"
+                class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                Project</a>
+              <a href="https://github.com/Diba15/inventaris_app" target="_blank"
+                class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
+            </div>
+          </div>
+          <div
+            class="card-project bg-gray-200 p-4 rounded-lg">
+            <h3 class="font-bold">Todos Apps</h3>
+            <p class="text-justify">
+              Task management built using Vue.js and styled with Tailwind CSS.
+              The application utilizes browser local storage for data
+              persistence, meaning your tasks are saved directly in your
+              browser. This allows your todos to remain
+              accessible even after closing or refreshing the browser.
             </p>
-        </div>
-    </section>
-
-    <!--  About Section  -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div id="profile">
-            <img id="prof-pict" src="assets/pictures/profile.png" alt="Profile Pictures">
-            <p class="paragraph">
-                Greetings, my name is <span class="highlight-text">Dimas Bagas Saputro</span>, and I hold a Bachelor’s
-                degree in Informatics Engineering
-                from
-                Telkom University. I possess a keen interest and am presently dedicating my efforts towards the domains
-                of
-                <span class="highlight-text">Frontend Web Development</span> and <span class="highlight-text">Backend Web Development</span>.
+            <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+              <a href="https://todos-app-peach.vercel.app/" target="_blank"
+                class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                Project</a>
+              <a href="https://github.com/Diba15/diba-todos-app" target="_blank"
+                class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
+            </div>
+          </div>
+          <div
+            class="card-project bg-gray-200 p-4 rounded-lg">
+            <h3 class="font-bold">Dewi Market</h3>
+            <p class="text-justify">
+              Dewi Market, a platform that provides various types of
+              high-quality food to meet your needs. We are committed to
+              providing the best products and satisfactory service to every
+              customer.
             </p>
-        </div>
-        <div id="skills-interest">
-            <div id="skills">
-                <h2>Skills</h2>
-                <ul class="skills-interest-container">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Vue.js</li>
-                    <li>Laravel</li>
-                    <li>MySQL</li>
-                </ul>
+            <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+              <a href="https://dewi-market.vercel.app/" target="_blank"
+                class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                Project</a>
+              <a href="https://github.com/Diba15/dewi-market" target="_blank"
+                class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
             </div>
-            <div id="interest">
-                <h2>Interests</h2>
-                <ul class="skills-interest-container">
-                    <li>Web Development</li>
-                    <li>UI/UX Design</li>
-                    <li>Data Analysis</li>
-                    <li>Machine Learning</li>
-                </ul>
+          </div>
+          <div
+            class="card-project bg-gray-200 p-4 rounded-lg">
+            <h3 class="font-bold">Petani Pintar</h3>
+            <p class="text-justify">
+              Apps that help Indonesian farmers to grow their crops more
+              efficiently and effectively. Build with Next.js and Tailwind CSS.
+            </p>
+            <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+              <a href="https://petani-pintar-diba.vercel.app/" target="_blank"
+                class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                Project</a>
+              <a href="https://github.com/Diba15/petani_pintar_diba"
+                target="_blank"
+                class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
             </div>
-        </div>
-        <div id="work">
-            <h2>Work Experiences</h2>
-            <div id="work-list">
-                <div class="card-work">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <h3>Frontend Developer</h3>
-                            <p class="highlight-text">SIMBARRAYA</p>
-                        </div>
-                        <p>2023 - 2024</p>
-                    </div>
-                    <p>In this role, I was entrusted with the duties of a Front End Developer, overseeing the visual
-                        design of the website to be developed. The website was constructed utilizing Laravel and
-                        Bootstrap as its foundational frameworks.</p>
-                </div>
-                <div class="card-work">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <h3>Technical Writer</h3>
-                            <p class="highlight-text">BPH MIGAS</p>
-                        </div>
-                        <p>2021 - 2022</p>
-                    </div>
-                    <p>During this internship, I was entrusted with the role of Technical Writer. My responsibilities
-                        included the development of dashboards and the automation of reporting through the use of
-                        Tableau. Additionally, I was tasked with performing low-level testing, data cleansing and
-                        migration, as well as the documentation of model data and application flow logic at BPH Migas,
-                        utilizing Laravel and SQL in my work.</p>
-                </div>
+          </div>
+          <div
+            class="card-project bg-gray-200 p-4 rounded-lg">
+            <h3 class="font-bold">Simple Calculator</h3>
+            <p class="text-justify">
+              A modern calculator application built with Next JS and styled
+              using Tailwind CSS. Features a clean, responsive interface for
+              performing basic arithmetic calculations with an intuitive user
+              experience.
+            </p>
+            <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+              <a href="https://diba-calc.vercel.app/" target="_blank"
+                class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                Project</a>
+              <a href="https://github.com/Diba15/diba_calc"
+                target="_blank"
+                class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
             </div>
+          </div>
+          <div
+            class="card-project bg-gray-200 p-4 rounded-lg">
+            <h3 class="font-bold">Diba Portfolio</h3>
+            <p class="text-justify">
+              My personal portfolio website.
+            </p>
+            <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+              <a href="https://diba-portfolio.vercel.app/" target="_blank"
+                class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                Project</a>
+              <a href="https://github.com/Diba15/belajar-vue"
+                target="_blank"
+                class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!--  Projects Section  -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div id="project-list">
-            <div class="card-project">
-                <h3>Inventaris Apps</h3>
-                <p>Inventory management system built using Vue.js, styled with Tailwind CSS, and powered by Strapi as
-                    the backend. The application helps businesses manage products, suppliers, warehouses, and reports
-                    efficiently. With real-time updates and secure data storage, it ensures that inventory information
-                    is always accurate and accessible.</p>
-                <div class="show_more">
-                    <div onclick="toggleShowMore(this)">
-                        <p class="show_more_text">Show More</p>
-                        <span class="show_more_icon">&#9660;</span>
-                    </div>
-                    <div onclick="toggleShowLess(this)">
-                        <p class="show_less_text">Show Less</p>
-                        <span class="show_less_icon">&#9650;</span>
-                    </div>
-                </div>
-                <div class="btn-list">
-                    <a href="https://inventaris-app-eight.vercel.app/" target="_blank" class="btn_preview">View
-                        Project</a>
-                    <a href="https://github.com/Diba15/inventaris_app" target="_blank" class="btn_github">Github</a>
-                </div>
-            </div>
-            <div class="card-project">
-                <h3>Todos Apps</h3>
-                <p>Task management built using Vue.js and styled with Tailwind CSS. The application utilizes browser
-                    local storage for data persistence, meaning your tasks are saved directly in your browser. This
-                    allows your todos to remain accessible even after closing or refreshing the browser.</p>
-                <div class="show_more">
-                    <div onclick="toggleShowMore(this)">
-                        <p class="show_more_text">Show More</p>
-                        <span class="show_more_icon">&#9660;</span>
-                    </div>
-                    <div onclick="toggleShowLess(this)">
-                        <p class="show_less_text">Show Less</p>
-                        <span class="show_less_icon">&#9650;</span>
-                    </div>
-                </div>
-                <div class="btn-list">
-                    <a href="https://todos-app-peach.vercel.app/" target="_blank" class="btn_preview">View
-                        Project</a>
-                    <a href="https://github.com/Diba15/diba-todos-app" target="_blank" class="btn_github">Github</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--  Contact Section  -->
-    <section id="contacts">
-        <h2>Contact</h2>
-        <form id="contact-container">
-            <div class="input-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Insert your name" required>
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Insert your email" required>
-            </div>
-            <div class="input-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Insert your message" required></textarea>
-            </div>
-            <button type="submit" id="contact-button">Send Message</button>
+      <!--  Contact Section  -->
+      <section id="contacts" class="flex flex-col gap-4">
+        <h2 class="text-xl font-bold">Contact</h2>
+        <form id="contact-container"
+          class="flex flex-col gap-4 bg-gray-200 p-4 rounded-lg"">
+          <div class="flex flex-col gap-2">
+            <label for="name">Name</label>
+            <input
+              class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-[var(--main-color)] focus:shadow-lg focus:shadow-[var(--main-color)]"
+              type="text" id="name" name="name" placeholder="Insert your name"
+              required />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="email">Email</label>
+            <input
+              class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-[var(--main-color)] focus:shadow-lg focus:shadow-[var(--main-color)]"
+              type="email" id="email" name="email"
+              placeholder="Insert your email" required />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="message">Message</label>
+            <textarea
+              class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-[var(--main-color)] focus:shadow-lg focus:shadow-[var(--main-color)]"
+              id="message" name="message" rows="5"
+              placeholder="Insert your message" required></textarea>
+          </div>
+          <button type="submit" id="contact-button"
+            class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">Send
+            Message</button>
         </form>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer>
-    <p>&copy; 2026 Dimas Bagas Saputro. All rights reserved.</p>
-</footer>
+    <footer id="footer" class="bg-white/80 text-center p-4 mt-8">
+      <p>&copy; 2026 Dimas Bagas Saputro. All rights reserved.</p>
+    </footer>
 
-<script src="assets/index.js"></script> <!-- import script from index.js -->
-</body>
+    <script src="assets/index.js"></script>
+    <!-- import script from index.js -->
+  </body>
 </html>

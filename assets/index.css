@@ -189,35 +189,11 @@ section {
 }
 
 .card-project {
-    width: 50%;
+    width: 100%;
     background: white;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-/*Set max word*/
-.card-project p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.show_more {
-    color: var(--main-color);
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 0.5rem;
-}
-
-.show_more:hover {
-    text-decoration: underline;
-}
-
-.show_more_icon {
-    margin-left: 0.25rem;
     transition: transform 0.3s ease;
 }
 
