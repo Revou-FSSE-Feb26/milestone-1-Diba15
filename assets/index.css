@@ -1,9 +1,6 @@
-/*Set theme variable, use :root because can't use @theme here :')*/
 :root {
     --main-color: darkgreen;
     --sub-color: #4caf50;
-    --bg-color: #f5f4fc;
-    --text-color: #474747;
     --dark-color: #1e293b;
 }
 

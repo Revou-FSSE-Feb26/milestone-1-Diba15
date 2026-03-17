@@ -15,13 +15,22 @@
     <link rel="stylesheet" href="assets/index.css">
     <!-- Import Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-main: darkgreen;
+            --color-sub: #4caf50;
+            --color-vanilla: #f5f4fc;
+            --color-forText: #474747;
+            --color-dark: #1e293b;
+        }
+    </style>
 </head>
 <body
-        class="bg-[var(--bg-color)] flex flex-col gap-4 text-[var(--text-color)]">
+        class="bg-vanilla flex flex-col gap-4 text-forText">
 <!--Header Navbar-->
 <header id="header" class="sticky top-0 bg-white/80 z-10 p-4">
     <nav id="navbar"
-         class="flex gap-4 justify-center *:hover:text-[var(--main-color)] transition-colors duration-300 flex-wrap">
+         class="flex gap-4 justify-center *:hover:text-main transition-colors duration-300 flex-wrap">
         <a onclick="activeNav(this)" class="active" href="#home">Home</a>
         <a onclick="activeNav(this)" href="#about">About Me</a>
         <a onclick="activeNav(this)" href="#projects">Projects</a>
@@ -157,7 +166,7 @@
                 </p>
                 <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
                     <a href="https://inventaris-app-eight.vercel.app/" target="_blank" rel="noopener"
-                       class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                       class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
                     <a href="https://github.com/Diba15/inventaris_app" target="_blank" rel="noopener"
                        class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
@@ -175,7 +184,7 @@
                 </p>
                 <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
                     <a href="https://todos-app-peach.vercel.app/" target="_blank" rel="noopener"
-                       class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                       class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
                     <a href="https://github.com/Diba15/diba-todos-app" target="_blank" rel="noopener"
                        class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
@@ -192,7 +201,7 @@
                 </p>
                 <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
                     <a href="https://dewi-market.vercel.app/" target="_blank" rel="noopener"
-                       class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                       class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
                     <a href="https://github.com/Diba15/dewi-market" target="_blank" rel="noopener"
                        class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
@@ -207,7 +216,7 @@
                 </p>
                 <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
                     <a href="https://petani-pintar-diba.vercel.app/" target="_blank" rel="noopener"
-                       class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                       class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
                     <a href="https://github.com/Diba15/petani_pintar_diba"
                        target="_blank" rel="noopener"
@@ -225,7 +234,7 @@
                 </p>
                 <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
                     <a href="https://diba-calc.vercel.app/" target="_blank" rel="noopener"
-                       class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                       class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
                     <a href="https://github.com/Diba15/diba_calc"
                        target="_blank" rel="noopener"
@@ -240,7 +249,7 @@
                 </p>
                 <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
                     <a href="https://diba-portfolio.vercel.app/" target="_blank" rel="noopener"
-                       class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">View
+                       class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
                     <a href="https://github.com/Diba15/belajar-vue"
                        target="_blank" rel="noopener"
@@ -258,26 +267,26 @@
             <div class="flex flex-col gap-2">
                 <label for="name">Name</label>
                 <input
-                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-[var(--main-color)] focus:shadow-lg focus:shadow-[var(--main-color)]"
+                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-lg focus:shadow-main"
                         type="text" id="name" name="name" placeholder="Insert your name"
                         required/>
             </div>
             <div class="flex flex-col gap-2">
                 <label for="email">Email</label>
                 <input
-                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-[var(--main-color)] focus:shadow-lg focus:shadow-[var(--main-color)]"
+                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-lg focus:shadow-main"
                         type="email" id="email" name="email"
                         placeholder="Insert your email" required/>
             </div>
             <div class="flex flex-col gap-2">
                 <label for="message">Message</label>
                 <textarea
-                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-[var(--main-color)] focus:shadow-lg focus:shadow-[var(--main-color)]"
+                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-lg focus:shadow-main"
                         id="message" name="message" rows="5"
                         placeholder="Insert your message" required></textarea>
             </div>
             <button type="submit" id="contact-button"
-                    class="px-4 py-2 bg-[var(--main-color)] text-white rounded-lg hover:bg-green-700">Send
+                    class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">Send
                 Message
             </button>
         </form>
