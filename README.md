@@ -2,9 +2,7 @@
 
 # Overview
 
-Simple resume about me, built with just HTML, CSS, and a little bit of JavaScript. This project is a great way to
-practice your web development skills and create a professional-looking resume that you can share with potential
-employers.
+Simple resume about me, built with just HTML, Tailwind CSS, and a little bit of JavaScript.
 
 ## ✨ Github Pages
 
@@ -28,7 +26,7 @@ employers.
 ## 🛠️ Tech Stack
 
 - HTML: Used for structuring the content of the resume.
-- CSS: Used for styling the resume and making it visually appealing.
+- Tailwind CSS: Used for styling the resume and making it visually appealing.
 - JavaScript: Used for adding interactivity, such as click navbar.
 
 ## 📸 Screenshots
@@ -43,7 +41,7 @@ employers.
 ## 📂 Project Structure
 
 ```bash
-module1/
+milestone-1-Diba15/
 |-- assets/  # Assets Folder
 |   |-- pictures/ # Pictures Folder
 |   |-- index.css
