@@ -152,7 +152,7 @@
     <section id="projects" class="flex flex-col gap-4">
         <h2 class="text-xl font-bold">Projects</h2>
         <div id="project-list"
-             class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid md:grid-cols-3 *:flex *:flex-col *:justify-between *:*gap-4 [&_p]:line-clamp-3">
+             class="grid grid-cols-1 gap-4 *:hover:shadow-sm *:hover:shadow-main *:hover:scale-105 *:transition-all *:duration-300 sm:grid-cols-2 md:grid md:grid-cols-3 *:flex *:flex-col *:justify-between *:*gap-4 [&_p]:line-clamp-3">
             <div
                     class="card-project bg-gray-200 p-4 rounded-lg">
                 <h3 class="font-bold">Inventaris Apps</h3>
@@ -267,21 +267,21 @@
             <div class="flex flex-col gap-2">
                 <label for="name">Name</label>
                 <input
-                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-lg focus:shadow-main"
+                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-sm focus:shadow-main"
                         type="text" id="name" name="name" placeholder="Insert your name"
                         required/>
             </div>
             <div class="flex flex-col gap-2">
                 <label for="email">Email</label>
                 <input
-                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-lg focus:shadow-main"
+                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-sm focus:shadow-main"
                         type="email" id="email" name="email"
                         placeholder="Insert your email" required/>
             </div>
             <div class="flex flex-col gap-2">
                 <label for="message">Message</label>
                 <textarea
-                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-lg focus:shadow-main"
+                        class="p-2 rounded-lg border border-gray-300 bg-gray-100 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-sm focus:shadow-main"
                         id="message" name="message" rows="5"
                         placeholder="Insert your message" required></textarea>
             </div>
