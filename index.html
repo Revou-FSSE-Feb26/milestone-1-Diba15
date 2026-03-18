@@ -12,6 +12,7 @@
     <meta name="keywords"
           content="Dimas Bagas Saputro, mini resume, web development, front-end development, projects, contact information"/>
     <!-- import style from index.css -->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="assets/index.css">
     <!-- Import Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -22,6 +23,13 @@
             --color-vanilla: #f5f4fc;
             --color-forText: #474747;
             --color-dark: #1e293b;
+            --color-hero1: #f0fff8;
+            --color-hero2: #b8f5e2;
+        }
+
+        .highlight-text {
+            color: var(--main-color);
+            @apply font-semibold;
         }
     </style>
 </head>
@@ -38,14 +46,29 @@
     </nav>
 </header>
 
+<!--Hero Section-->
+<div id="hero"
+     class="flex flex-col md:flex-row items-center text-center md:text-left justify-center md:justify-evenly p-10 gap-8 bg-gray-200 max-w-4xl mx-auto flex-none">
+    <img id="prof-pict"
+         class="rounded-full w-[200px] h-[200px] object-cover shadow-lg md:w-[250px] md:h-[250px] "
+         src="assets/pictures/profile.png" alt="Profile Pictures"/>
+    <div class="flex flex-col gap-2">
+        <h1 id="welcome_greet"
+            class="text-4xl/15 mb-4 bitcount-font-bold bg-gradient-to-r from-hero1 to-hero2 bg-clip-text -m-1 text-transparent text-shadow-sm">
+            Hello everyone, <br/>
+            <span class="datatype-font-regular text-shadow-sm">Welcome to my mini resume.</span>
+        </h1>
+    </div>
+</div>
+
 <!--Contents-->
 <main id="contents" class="p-4 max-w-4xl mx-auto flex flex-col gap-8">
     <!-- Home Section   -->
     <section id="home">
-        <h1 id="welcome_greet" class="text-4xl/15 font-bold mb-4">
-            Hello everyone, <br/>
-            <span>Welcome to my mini resume.</span>
-        </h1>
+        <!--        <h1 id="welcome_greet" class="text-4xl/15 font-bold mb-4">-->
+        <!--            Hello everyone, <br/>-->
+        <!--            <span>Welcome to my mini resume.</span>-->
+        <!--        </h1>-->
         <div id="home-profile" class="flex flex-col gap-4 items-center">
             <p class="text-md/20 indent-4 text-justify">
                 Hi, I'm <span class="highlight-text">Dimas Bagas Saputro</span>. I
@@ -69,11 +92,8 @@
 
     <!--  About Section  -->
     <section id="about" class="flex flex-col gap-8">
-        <h2 class="text-xl font-bold">About Me</h2>
+        <h2 class="text-xl font-extrabold">About Me</h2>
         <div id="profile" class="flex flex-col gap-4 items-center text-justify">
-            <img id="prof-pict"
-                 class="rounded-full w-[200px] h-[200px] object-cover shadow-lg md:w-[250px] md:h-[250px] "
-                 src="assets/pictures/profile.png" alt="Profile Pictures"/>
             <p class="text-md/20 indent-4">
                 Greetings, my name is <span class="highlight-text">Dimas Bagas
               Saputro</span>, and I hold a Bachelor's degree in Informatics
@@ -86,7 +106,7 @@
         </div>
         <div id="skills-interest" class="flex flex-col gap-8">
             <div id="skills" class="flex flex-col gap-4">
-                <h2 class="text-lg font-bold">Skills</h2>
+                <h2 class="text-lg font-extrabold">Skills</h2>
                 <ul
                         class="flex flex-col gap-2 list-[japanese-informal] list-inside bg-gray-200 p-4 rounded-lg">
                     <li>HTML</li>
@@ -98,7 +118,7 @@
                 </ul>
             </div>
             <div id="interest" class="flex flex-col gap-4">
-                <h2 class="text-lg font-bold">Interests</h2>
+                <h2 class="text-lg font-extrabold">Interests</h2>
                 <ul
                         class="flex flex-col gap-2 list-[japanese-informal] list-inside bg-gray-200 p-4 rounded-lg">
                     <li>Web Development</li>
@@ -109,7 +129,7 @@
             </div>
         </div>
         <div id="work" class="flex flex-col gap-4">
-            <h2 class="text-lg font-bold">Work Experiences</h2>
+            <h2 class="text-lg font-extrabold">Work Experiences</h2>
             <div id="work-list" class="flex flex-col gap-4">
                 <div class="bg-gray-200 p-4 rounded-lg">
                     <div class="flex justify-between items-center">
@@ -117,7 +137,7 @@
                             <h3 class="font-bold">Frontend Developer</h3>
                             <p class="highlight-text">SIMBARRAYA</p>
                         </div>
-                        <p>2023 - 2024</p>
+                        <p class="font-extralight">2023 - 2024</p>
                     </div>
                     <p class="text-justify">
                         In this role, I was entrusted with the duties of a Front End
@@ -150,9 +170,9 @@
 
     <!--  Projects Section  -->
     <section id="projects" class="flex flex-col gap-4">
-        <h2 class="text-xl font-bold">Projects</h2>
+        <h2 class="text-xl font-extrabold">Projects</h2>
         <div id="project-list"
-             class="grid grid-cols-1 gap-4 *:hover:shadow-sm *:hover:shadow-main *:hover:scale-105 *:transition-all *:duration-300 sm:grid-cols-2 md:grid md:grid-cols-3 *:flex *:flex-col *:justify-between *:*gap-4 [&_p]:line-clamp-3">
+             class="gap-4 *:hover:shadow-sm *:hover:shadow-main *:hover:scale-105 *:transition-all *:duration-300 *:flex *:flex-col *:justify-between *:*gap-4 [&_p]:line-clamp-3">
             <div
                     class="card-project bg-gray-200 p-4 rounded-lg">
                 <h3 class="font-bold">Inventaris Apps</h3>
@@ -164,7 +184,7 @@
                     updates and secure data storage, it ensures that inventory
                     information is always accurate and accessible.
                 </p>
-                <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+                <div class="btn-list mt-4">
                     <a href="https://inventaris-app-eight.vercel.app/" target="_blank" rel="noopener"
                        class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
@@ -182,7 +202,7 @@
                     browser. This allows your todos to remain
                     accessible even after closing or refreshing the browser.
                 </p>
-                <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+                <div class="btn-list mt-4">
                     <a href="https://todos-app-peach.vercel.app/" target="_blank" rel="noopener"
                        class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
@@ -199,7 +219,7 @@
                     providing the best products and satisfactory service to every
                     customer.
                 </p>
-                <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+                <div class="btn-list mt-4">
                     <a href="https://dewi-market.vercel.app/" target="_blank" rel="noopener"
                        class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
@@ -214,7 +234,7 @@
                     Apps that help Indonesian farmers to grow their crops more
                     efficiently and effectively. Build with Next.js and Tailwind CSS.
                 </p>
-                <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+                <div class="btn-list mt-4">
                     <a href="https://petani-pintar-diba.vercel.app/" target="_blank" rel="noopener"
                        class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
@@ -232,7 +252,7 @@
                     performing basic arithmetic calculations with an intuitive user
                     experience.
                 </p>
-                <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+                <div class="btn-list mt-4">
                     <a href="https://diba-calc.vercel.app/" target="_blank" rel="noopener"
                        class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
@@ -247,7 +267,7 @@
                 <p class="text-justify">
                     My personal portfolio website.
                 </p>
-                <div class="btn-list flex flex-col md:flex-row gap-4 mt-4">
+                <div class="btn-list mt-4">
                     <a href="https://diba-portfolio.vercel.app/" target="_blank" rel="noopener"
                        class="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700">View
                         Project</a>
@@ -261,7 +281,7 @@
 
     <!--  Contact Section  -->
     <section id="contacts" class="flex flex-col gap-4">
-        <h2 class="text-xl font-bold">Contact</h2>
+        <h2 class="text-xl font-extrabold">Contact</h2>
         <form id="contact-container"
               class="flex flex-col gap-4 bg-gray-200 p-4 rounded-lg">
             <div class="flex flex-col gap-2">

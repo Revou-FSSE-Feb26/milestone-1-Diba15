@@ -1,3 +1,6 @@
+/*Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Datatype:wdth,wght@50..150,100..900&display=swap');
+
 :root {
     --main-color: darkgreen;
     --sub-color: #4caf50;
@@ -31,10 +34,7 @@
 }
 
 /*Put default css from assignment module 1*/
-.highlight-text {
-    color: var(--main-color);
-    font-weight: bold;
-}
+
 
 #navbar a.active {
     font-weight: bold;
@@ -48,4 +48,81 @@
     left: 0;
     width: 100%;
     height: 2px;
+}
+
+#profile img {
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+}
+
+.datatype-font-regular {
+    font-family: "Datatype", monospace;
+    font-weight: 400;
+}
+
+.datatype-font-bold {
+    font-family: "Datatype", monospace;
+    font-weight: 700;
+}
+
+.bitcount-font-bold {
+    font-family: "Bitcount Prop Double", sans-serif;
+    font-weight: 700;
+}
+
+.bitcount-font-regular {
+    font-family: "Bitcount Prop Double", sans-serif;
+    font-weight: 400;
+}
+
+/*Hero Section*/
+
+#hero {
+    background-image: url("pictures/hero_image_green.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    min-width: 100% !important;
+}
+
+/*Projects List*/
+#project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.btn-list {
+    display: flex;
+    gap: 8px;
+}
+
+/*Tablet*/
+@media screen and (max-device-width: 768px) {
+    #hero {
+        height: auto;
+        min-width: 100% !important;
+    }
+
+    #project-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .btn-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/*Smartphone*/
+@media screen and (max-device-width: 480px) {
+    #project-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }
