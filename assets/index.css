@@ -98,6 +98,22 @@
     gap: 8px;
 }
 
+#welcome_greet {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid var(--main-color);
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
 /*Tablet*/
 @media screen and (max-device-width: 768px) {
     #hero {
@@ -116,6 +132,11 @@
         flex-direction: column;
         gap: 8px;
     }
+
+    #welcome_greet {
+        white-space: normal;
+        overflow: hidden;
+    }
 }
 
 /*Smartphone*/
@@ -124,5 +145,9 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 16px;
+    }
+
+    #welcome_greet {
+        white-space: normal;
     }
 }
