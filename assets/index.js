@@ -30,3 +30,11 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+function togglePopUp() {
+    const body = document.getElementById("contents");
+    const popUp = document.getElementById("pop-up");
+    popUp.classList.toggle("hidden");
+    body.classList.toggle("blur");
+    console.log("pop up");
+}

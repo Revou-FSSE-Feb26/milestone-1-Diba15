@@ -333,6 +333,20 @@
                                 class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">Github</a>
                         </div>
                     </div>
+                    <!-- Don't hover me -->
+                    <div
+                        class="card-project bg-gray-200 p-4 rounded-lg"
+                        id="dont-hover">
+                        <h3 class="font-bold">Don't hover me >w< </h3>
+                        <p class="text-justify">
+                            Please don't hover me
+                        </p>
+                        <div class="btn-list mt-4">
+                            <a href="#" onclick="togglePopUp()"
+                                class="px-4 py-2 cursor-pointer bg-main text-white rounded-lg hover:bg-green-700">Don't
+                                click me</a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -376,6 +390,14 @@
             <p>&copy; 2026 <span class="font-light">Dimas Bagas Saputro</span>.
                 All rights reserved.</p>
         </footer>
+
+        <!-- Don't look at this pop up -->
+        <div id="pop-up"
+            class="transition-all duration-300 bg-white flex flex-col gap-4 hidden w-fit p-4 rounded-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <h1>Please don't punish me for prank</h1>
+            <button
+                class="px-4 py-2 bg-red-500 text-white rounded-xl hover:bg-red-600" onclick="togglePopUp()">Close</button>
+        </div>
 
         <script src="assets/index.js"></script>
         <!-- import script from index.js -->

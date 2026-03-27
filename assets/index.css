@@ -124,6 +124,37 @@
     }
 }
 
+#dont-hover {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/*  */
+#dont-hover:hover {
+    animation: random-move 0.3s ease-in-out;
+}
+
+@keyframes random-move {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, 10px);
+    }
+    40% {
+        transform: translate(0, 0);
+    }
+    60% {
+        transform: translate(0, 10px);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 10px);
+    }
+}
+
 /*Tablet*/
 @media screen and (max-device-width: 768px) {
     #hero {
