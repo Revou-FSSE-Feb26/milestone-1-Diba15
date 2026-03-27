@@ -114,6 +114,16 @@
     }
 }
 
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--main-color);
+    }
+}
+
 /*Tablet*/
 @media screen and (max-device-width: 768px) {
     #hero {
