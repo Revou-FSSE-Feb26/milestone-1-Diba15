@@ -20,6 +20,7 @@ Simple resume about me, built with just HTML, Tailwind CSS, and a little bit of 
 | Smooth Scrolling             | The resume includes smooth scrolling functionality, providing a seamless user experience when navigating through the different sections. |
 | Hover Effects                | The resume includes hover effects on various elements, such as buttons and links, to enhance interactivity and visual appeal.            |
 | Contact Form with Validation | The resume includes a contact form that allows users to easily get in touch with the resume owner.                                       |
+| Animations                   | The resume includes animations to make the user experience more engaging and visually appealing.                                       |
 
 ---
 
