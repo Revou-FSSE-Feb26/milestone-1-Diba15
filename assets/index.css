@@ -1,5 +1,6 @@
 /*Import Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Datatype:wdth,wght@50..150,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Silkscreen:wght@400;700&display=swap');
 
 /*Styling scrollbar*/
 ::-webkit-scrollbar {
@@ -59,6 +60,26 @@
     font-weight: 400;
 }
 
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.share-tech-mono-regular {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
 /*Hero Section*/
 
 #hero {
@@ -95,16 +116,19 @@
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
 }
 
 @keyframes blink-caret {
+
     from,
     to {
         border-color: transparent;
     }
+
     50% {
         border-color: darkgreen;
     }
@@ -114,6 +138,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }

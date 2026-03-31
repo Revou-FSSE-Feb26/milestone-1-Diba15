@@ -13,7 +13,6 @@
             content="Dimas Bagas Saputro, mini resume, web development, front-end development, projects, contact information" />
         <meta name="color-scheme" content="light dark" />
         <!-- import style from index.css -->
-        <!--    <link href="https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap" rel="stylesheet">-->
         <link rel="stylesheet" href="assets/index.css">
         <!-- Import Tailwind CSS -->
         <script
@@ -67,8 +66,7 @@
 
             /*Navbar*/
             .active {
-                font-weight: bold;
-                @apply text-main;
+                @apply font-bold text-main;
             }
 
             .dark .active {
@@ -77,11 +75,7 @@
 
             .active::after {
                 content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 2px;
+                @apply absolute bottom-0 left-0 w-full h-0.5;
             }
 
             /*Card*/
@@ -111,7 +105,7 @@
             class="sticky top-0 bg-white/80 dark:bg-dark-bg/90 backdrop-blur-md z-10 p-4 transition-colors">
             <nav id="navbar" class="flex justify-end md:justify-between">
                 <div
-                    class="hidden md:flex gap-4 *:hover:text-main transition-colors duration-300 flex-wrap">
+                    class="hidden md:flex gap-4 *:hover:text-main dark:*:hover:text-sub transition-colors duration-300 flex-wrap">
                     <a onclick="activeNav(this)"
                         class="active transition-colors duration-300"
                         href="#hero">Home</a>
@@ -128,7 +122,7 @@
                     <div id="theme-btn">
                         <button aria-label="Theme Button" type="button"
                             onclick="toggleTheme()"
-                            class="btn btn-sm btn-ghost cursor-pointer transition-all duration-300">
+                            class="btn btn-sm btn-ghost cursor-pointer transition-all duration-300 hover:text-yellow-500">
                             <i id="theme-icon" class="fa-solid fa-moon"></i>
                         </button>
                     </div>
@@ -204,7 +198,7 @@
                     src="assets/pictures/profile.png" alt="Profile Pictures" />
                 <div class="flex flex-col gap-2">
                     <h1 id="welcome_greet"
-                        class="text-4xl/15 mb-4 bitcount-font-bold text-hero1 -m-1 text-shadow-sm">
+                        class="text-4xl/15 mb-4 share-tech-mono-regular text-hero1 -m-1 text-shadow-sm">
                         Hello everyone, <br />
                         <span
                             class="datatype-font-regular text-shadow-sm text-hero2">Welcome
@@ -494,7 +488,7 @@
 
         <footer id="footer"
             class="bg-white/80 dark:bg-dark-card text-center p-4 mt-8">
-            <p>&copy; 2026 <span class="font-light">Dimas Bagas Saputro</span>.
+            <p>&copy; 2026 <span class="font-light share-tech-mono-regular">Dimas Bagas Saputro</span>.
                 All rights reserved.</p>
         </footer>
 
