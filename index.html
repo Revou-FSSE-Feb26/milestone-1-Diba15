@@ -36,6 +36,7 @@
         @variant dark (&:where(.dark, .dark *));
 
         @layer base {
+
             body {
                 @apply bg-vanilla text-forText dark:bg-dark-bg dark:text-hero1 transition-colors duration-300;
             }
@@ -57,11 +58,15 @@
 
             /*Button*/
             .project-btn {
-                @apply px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700;
+                @apply px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700 w-full;
             }
 
             .github-btn {
                 @apply px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600;
+            }
+
+            .btn-list {
+                @apply flex gap-2;
             }
 
             /*Navbar*/
@@ -80,7 +85,11 @@
 
             /*Card*/
             .card-SI {
-                @apply bg-gray-200 dark:bg-dark-card flex flex-col gap-2 list-[japanese-informal] list-inside p-4 rounded-lg transition-colors duration-300;
+                @apply bg-gray-200 dark:bg-dark-card flex flex-wrap gap-2 list-inside p-4 rounded-lg transition-colors duration-300;
+            }
+
+            .card-SI li {
+                @apply px-4 py-2 text-sm rounded-lg border border-gray-300 bg-gray-100 dark:bg-slate-800 dark:text-white dark:border-slate-600 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-sm focus:shadow-main;
             }
 
             .card {
@@ -89,11 +98,11 @@
 
             /*Contact*/
             .input {
-                @apply p-2 rounded-lg border border-gray-300 bg-gray-100 dark:bg-slate-800 dark:text-white dark:border-none transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-sm focus:shadow-main;
+                @apply p-2 rounded-lg border border-gray-300 bg-gray-100 dark:bg-slate-800 dark:text-white dark:border-slate-600 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-sm focus:shadow-main;
             }
 
             .text-area {
-                @apply p-2 rounded-lg border border-gray-300 bg-gray-100 dark:bg-slate-800 dark:text-white dark:border-none placeholder:text-gray-400 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-sm focus:shadow-main;
+                @apply p-2 rounded-lg border border-gray-300 bg-gray-100 dark:bg-slate-800 dark:text-white dark:border-slate-600 placeholder:text-gray-400 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-main focus:shadow-sm focus:shadow-main;
                 resize: none;
             }
         }
@@ -241,7 +250,8 @@
                             Industry</span>.
                     </p>
                 </div>
-                <div id="skills-interest" class="flex flex-col gap-8">
+                <div id="skills-interest"
+                    class="flex flex-col md:flex-row gap-4">
                     <div id="skills" class="flex flex-col gap-4">
                         <h3 class="sub-title">Skills</h3>
                         <ul class="card-SI">
@@ -256,7 +266,7 @@
                     <div id="interest" class="flex flex-col gap-4">
                         <h2 class="sub-title">Interests</h2>
                         <ul class="card-SI">
-                            <li>Web Development</li>
+                            <li>Web Dev</li>
                             <li>UI/UX Design</li>
                             <li>Data Analysis</li>
                             <li>Machine Learning</li>
@@ -271,9 +281,9 @@
                                 <div class="flex flex-col">
                                     <h3 class="font-bold">Frontend
                                         Developer</h3>
-                                    <p class="highlight-text">SIMBARRAYA</p>
+                                    <p class="text-gray-500 dark:text-gray-400 text-sm font-semibold">SIMBARRAYA</p>
                                 </div>
-                                <p class="font-extralight">2023 - 2024</p>
+                                <p class="highlight-text font-light text-sm font-semibold">2023 - 2024</p>
                             </div>
                             <p class="text-justify">
                                 In this role, I was entrusted with the duties of
@@ -288,10 +298,10 @@
                         <div class="card">
                             <div class="flex justify-between items-center">
                                 <div class="flex flex-col">
-                                    <h3 class="font-bold">Technical Writer</h3>
-                                    <p class="highlight-text">BPH MIGAS</p>
+                                    <h3 class="font-bold">Technical Writer Intern</h3>
+                                    <p class="text-gray-500 dark:text-gray-400 text-sm font-semibold">BPH MIGAS</p>
                                 </div>
-                                <p>2021 - 2022</p>
+                                <p class="highlight-text font-light text-sm font-semibold">2021 - 2022</p>
                             </div>
                             <p class="text-justify">
                                 During this internship, I was entrusted with the
@@ -340,7 +350,9 @@
                                 Project</a>
                             <a href="https://github.com/Diba15/inventaris_app"
                                 target="_blank" rel="noopener"
-                                class="github-btn">Github</a>
+                                aria-label="Github Link"
+                                class="github-btn"><i
+                                    class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                     <div
@@ -364,7 +376,9 @@
                                 Project</a>
                             <a href="https://github.com/Diba15/diba-todos-app"
                                 target="_blank" rel="noopener"
-                                class="github-btn">Github</a>
+                                aria-label="Github Link"
+                                class="github-btn"><i
+                                    class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                     <div
@@ -386,7 +400,9 @@
                                 Project</a>
                             <a href="https://github.com/Diba15/dewi-market"
                                 target="_blank" rel="noopener"
-                                class="github-btn">Github</a>
+                                aria-label="Github Link"
+                                class="github-btn"><i
+                                    class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                     <div
@@ -406,7 +422,9 @@
                             <a
                                 href="https://github.com/Diba15/petani_pintar_diba"
                                 target="_blank" rel="noopener"
-                                class="github-btn">Github</a>
+                                aria-label="Github Link"
+                                class="github-btn"><i
+                                    class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                     <div
@@ -427,8 +445,8 @@
                                 class="project-btn">View
                                 Project</a>
                             <a href="https://github.com/Diba15/diba_calc"
-                                target="_blank" rel="noopener"
-                                class="github-btn">Github</a>
+                                target="_blank" rel="noopener" aria-label="Github Link"
+                                class="github-btn"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                     <div
@@ -443,8 +461,8 @@
                                 class="project-btn">View
                                 Project</a>
                             <a href="https://github.com/Diba15/belajar-vue"
-                                target="_blank" rel="noopener"
-                                class="github-btn">Github</a>
+                                target="_blank" rel="noopener" aria-label="Github Link"
+                                class="github-btn"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -488,7 +506,9 @@
 
         <footer id="footer"
             class="bg-white/80 dark:bg-dark-card text-center p-4 mt-8">
-            <p>&copy; 2026 <span class="font-light share-tech-mono-regular">Dimas Bagas Saputro</span>.
+            <p>&copy; 2026 <span
+                    class="font-light share-tech-mono-regular">Dimas Bagas
+                    Saputro</span>.
                 All rights reserved.</p>
         </footer>
 
