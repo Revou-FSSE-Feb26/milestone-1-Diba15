@@ -36,9 +36,20 @@
         @variant dark (&:where(.dark, .dark *));
 
         @layer base {
-
             body {
                 @apply bg-vanilla text-forText dark:bg-dark-bg dark:text-hero1 transition-colors duration-300;
+            }
+
+            header {
+                @apply sticky top-0 bg-white/80 dark:bg-dark-bg/90 backdrop-blur-md z-10 p-4 transition-colors;
+            }
+
+            main {
+                @apply p-8 md:p-4 max-w-4xl mx-auto flex flex-col gap-8 transition-all duration-300;
+            }
+
+            footer {
+                @apply bg-white/80 dark:bg-dark-card text-center p-4 mt-8;
             }
         }
 
@@ -110,9 +121,8 @@
     </head>
     <body>
         <!--Header Navbar-->
-        <header id="header"
-            class="sticky top-0 bg-white/80 dark:bg-dark-bg/90 backdrop-blur-md z-10 p-4 transition-colors">
-            <nav id="navbar" class="flex justify-end md:justify-between">
+        <header id="header">
+            <nav id="navbar" class="flex justify-end md:justify-around">
                 <div
                     class="hidden md:flex gap-4 *:hover:text-main dark:*:hover:text-sub transition-colors duration-300 flex-wrap">
                     <a onclick="activeNav(this)"
@@ -198,7 +208,7 @@
         </header>
 
         <!--Contents-->
-        <main id="contents" class="p-4 max-w-4xl mx-auto flex flex-col gap-8">
+        <main id="contents">
             <!--Hero Section-->
             <section id="hero"
                 class="rounded-xl flex flex-col md:flex-row items-center text-center md:text-left justify-center md:justify-evenly p-10 gap-8 bg-gray-200 w-full mx-auto flex-none">
@@ -497,15 +507,14 @@
                             required></textarea>
                     </div>
                     <button type="submit" id="contact-button"
-                        class="project-btn cursor-pointer">Send
-                        Message
+                        class="project-btn cursor-pointer flex gap-2 items-center justify-center">Send
+                        Message <i class="fa-solid fa-paper-plane text-sm"></i>
                     </button>
                 </form>
             </section>
         </main>
 
-        <footer id="footer"
-            class="bg-white/80 dark:bg-dark-card text-center p-4 mt-8">
+        <footer id="footer">
             <p>&copy; 2026 <span
                     class="font-light share-tech-mono-regular">Dimas Bagas
                     Saputro</span>.
