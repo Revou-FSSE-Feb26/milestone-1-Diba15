@@ -21,6 +21,7 @@ Simple resume about me, built with just HTML, Tailwind CSS, and a little bit of 
 | Hover Effects                | The resume includes hover effects on various elements, such as buttons and links, to enhance interactivity and visual appeal.            |
 | Contact Form with Validation | The resume includes a contact form that allows users to easily get in touch with the resume owner.                                       |
 | Animations                   | The resume includes animations to make the user experience more engaging and visually appealing.                                       |
+| Dark Mode                    | The resume includes a dark mode option, allowing users to choose between light and dark modes to match their preferred visual style.           |
 
 ---
 
