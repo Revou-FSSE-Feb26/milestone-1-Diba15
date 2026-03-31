@@ -25,7 +25,7 @@ function toggleMobileMenu() {
 // Ketika scroll active class berubah
 window.addEventListener('scroll', () => {
     let current = "";
-    const sections = document.querySelectorAll('section, #hero');
+    const sections = document.querySelectorAll('section');
     const scrollPos = window.scrollY || window.pageYOffset;
 
     sections.forEach(section => {
