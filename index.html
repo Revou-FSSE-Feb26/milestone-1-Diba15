@@ -94,6 +94,10 @@
                 @apply absolute bottom-0 left-0 w-full h-0.5;
             }
 
+            #hero {
+                @apply rounded-xl flex flex-col md:flex-row items-center text-center md:text-left justify-center md:justify-evenly p-10 gap-8 bg-gray-200 w-full mx-auto;
+            }
+
             /*Card*/
             .card-SI {
                 @apply bg-gray-200 dark:bg-dark-card flex flex-wrap gap-2 list-inside p-4 rounded-lg transition-colors duration-300;
@@ -211,9 +215,9 @@
         <main id="contents">
             <!--Hero Section-->
             <section id="hero"
-                class="rounded-xl flex flex-col md:flex-row items-center text-center md:text-left justify-center md:justify-evenly p-10 gap-8 bg-gray-200 w-full mx-auto lampuRusak">
+                class="lampuRusak">
                 <img id="prof-pict"
-                    class="rounded-full w-[200px] h-[200px] object-cover shadow-lg md:w-[250px] md:h-[250px] border-8 border-sub"
+                    class="rounded-full w-[200px] h-[200px] object-cover shadow-lg md:w-[250px] md:h-[250px] border-4 border-sub"
                     src="assets/pictures/profile.png" alt="Profile Pictures" />
                 <div class="flex flex-col gap-2">
                     <h1 id="welcome_greet"
@@ -308,7 +312,7 @@
                                     class="highlight-text text-sm font-semibold">2023
                                     - 2024</p>
                             </div>
-                            <p class="text-justify">
+                            <p class="text-justify leading-relaxed">
                                 In this role, I was entrusted with the duties of
                                 a Front End
                                 Developer, overseeing the visual design of the
@@ -331,7 +335,7 @@
                                     class="highlight-text text-sm font-semibold">2021
                                     - 2022</p>
                             </div>
-                            <p class="text-justify">
+                            <p class="text-justify leading-relaxed">
                                 During this internship, I was entrusted with the
                                 role of
                                 Technical Writer. My responsibilities included
@@ -362,7 +366,7 @@
                     <div
                         class="card">
                         <h3 class="font-bold">Inventaris Apps</h3>
-                        <p class="text-justify">
+                        <p class="text-justify leading-relaxed">
                             Inventory management system built using Vue.js,
                             styled with
                             Tailwind CSS, and powered by Strapi as the backend.
@@ -389,7 +393,7 @@
                     <div
                         class="card">
                         <h3 class="font-bold">Todos Apps</h3>
-                        <p class="text-justify">
+                        <p class="text-justify leading-relaxed">
                             Task management built using Vue.js and styled with
                             Tailwind CSS.
                             The application utilizes browser local storage for
@@ -415,7 +419,7 @@
                     <div
                         class="card">
                         <h3 class="font-bold">Dewi Market</h3>
-                        <p class="text-justify">
+                        <p class="text-justify leading-relaxed">
                             Dewi Market, a platform that provides various types
                             of
                             high-quality food to meet your needs. We are
@@ -439,7 +443,7 @@
                     <div
                         class="card">
                         <h3 class="font-bold">Petani Pintar</h3>
-                        <p class="text-justify">
+                        <p class="text-justify leading-relaxed">
                             Apps that help Indonesian farmers to grow their
                             crops more
                             efficiently and effectively. Build with Next.js and
@@ -461,7 +465,7 @@
                     <div
                         class="card">
                         <h3 class="font-bold">Simple Calculator</h3>
-                        <p class="text-justify">
+                        <p class="text-justify leading-relaxed">
                             A modern calculator application built with Next.js
                             and styled
                             using Tailwind CSS. Features a clean, responsive
@@ -485,7 +489,7 @@
                     <div
                         class="card">
                         <h3 class="font-bold">Diba Portfolio</h3>
-                        <p class="text-justify">
+                        <p class="text-justify leading-relaxed">
                             My personal portfolio website.
                         </p>
                         <div class="btn-list mt-4">
