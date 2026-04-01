@@ -123,10 +123,11 @@
         }
     </style>
     </head>
-    <body>
+    <body onload="loadingScreen()">
         <!--Header Navbar-->
         <header id="header">
-            <nav id="navbar" class="flex justify-between px-4 lg:px-0 lg:justify-around">
+            <nav id="navbar"
+                class="flex justify-between px-4 lg:px-0 lg:justify-around">
                 <div
                     class="hidden md:flex gap-4 *:hover:text-main dark:*:hover:text-sub transition-colors duration-300 flex-wrap">
                     <a onclick="activeNav(this)"
@@ -546,12 +547,23 @@
             </section>
         </main>
 
+        <!-- Footer -->
         <footer id="footer">
             <p>&copy; 2026 <span
                     class="font-light share-tech-mono-regular">Dimas Bagas
                     Saputro</span>.
                 All rights reserved.</p>
         </footer>
+
+        <!-- Loading -->
+        <div
+            class="fixed top-0 left-0 w-full h-screen bg-vanilla dark:bg-dark-bg flex items-end py-8 px-8 justify-end z-50 transition-opacity duration-300"
+            id="loading-screen">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-spinner fa-spin text-2xl"></i>
+                <h3 class="text-2xl share-tech-mono-regular">Now Loading</h3>
+            </div>
+        </div>
 
         <script src="assets/index.js"></script>
         <!-- import script from index.js -->

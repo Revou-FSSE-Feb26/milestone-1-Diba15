@@ -80,3 +80,15 @@ function toggleTheme() {
         if (icon) icon.classList.replace('fa-sun', 'fa-moon');
     }
 })();
+
+function loadingScreen() {
+    const body = document.body;
+    const loadingScreen = document.getElementById('loading-screen');
+
+    body.style.overflow = 'hidden';
+
+    setTimeout(() => {
+        loadingScreen.classList.add('fade-loading');
+        body.style.overflow = 'auto';
+    }, 3000);
+}
