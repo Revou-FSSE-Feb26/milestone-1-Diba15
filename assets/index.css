@@ -32,6 +32,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+
 /*Put default css from assignment module 1*/
 
 #profile img {
