@@ -96,5 +96,26 @@ function loadingScreen() {
 // Submit Form Handler
 function submitContactForm(e) {
     e.preventDefault();
-    console.log('Form submitted');
+
+    const modal = document.getElementById('modal-form');
+    if (modal) {
+        modal.classList.remove('fade-loading');
+        modal.classList.remove('hidden');
+        modal.classList.add('fade');
+        modal.classList.add('flex');
+    }
+
+    const form = document.getElementById('contact-container');
+    if (form) {
+        form.reset();
+    }
+}
+
+// Close Modal Function
+function closeModal() {
+    const modal = document.getElementById('modal-form');
+    if (modal) {
+        modal.classList.add('fade-loading');
+
+    }
 }
