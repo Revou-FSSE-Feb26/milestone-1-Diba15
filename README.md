@@ -1,17 +1,16 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2AGu9A8s)
 
-# Overview
+# 👁️ Overview
 
-Simple resume about me, built with just HTML, Tailwind CSS, and a little bit of JavaScript. This website build for
-assignment milestone 1 of Revou FSE.
+Simple resume about me, built with just HTML, Tailwind CSS, and a little bit of JavaScript. This website build for assignment milestone 1 of Revou FSSE.
 
-## ✨ Github Pages
+## 📃 Github Pages
 
 ### Preview Web: [Click here!](https://revou-fsse-feb26.github.io/milestone-1-Diba15/)
 
 ---
 
-## 🚀 Features
+## 📋 Features
 
 | Feature                      | Description                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -21,12 +20,16 @@ assignment milestone 1 of Revou FSE.
 | Smooth Scrolling             | The resume includes smooth scrolling functionality, providing a seamless user experience when navigating through the different sections. |
 | Hover Effects                | The resume includes hover effects on various elements, such as buttons and links, to enhance interactivity and visual appeal.            |
 | Contact Form with Validation | The resume includes a contact form that allows users to easily get in touch with the resume owner.                                       |
-| Animations                   | The resume includes animations to make the user experience more engaging and visually appealing.                                         |
-| Dark Mode                    | The resume includes a dark mode option, allowing users to choose between light and dark modes to match their preferred visual style.     |
+| Animations                   | The resume includes animations such as typing animation and lampuRusak animation in Hero Section to make the user experience more engaging and visually appealing.                                         |
+| Light/Dark Mode              | The resume includes a light and dark mode toggle that allows users to switch between light and dark themes.                           |
+| Loading Screen               | The resume includes a loading screen to provide a smooth transition when the page loads.                                                   |
+| Scroll-based active navbar    | The resume includes a scroll-based active navbar that highlights the current section being viewed.                                       |
 
 ---
 
 ## 🛠️ Tech Stack
+
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,tailwind)](https://skillicons.dev)
 
 - HTML: Used for structuring the content of the resume.
 - Tailwind CSS: Used for styling the resume and making it visually appealing.
