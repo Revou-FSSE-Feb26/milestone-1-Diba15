@@ -66,6 +66,7 @@ function toggleTheme() {
     }
 }
 
+// Initialize Theme on Page Load
 (function initTheme() {
     const html = document.documentElement;
     const icon = document.getElementById('theme-icon');
@@ -81,6 +82,7 @@ function toggleTheme() {
     }
 })();
 
+// Loading Screen Logic
 function loadingScreen() {
     const body = document.body;
     const loadingScreen = document.getElementById('loading-screen');
@@ -89,4 +91,10 @@ function loadingScreen() {
         loadingScreen.classList.add('fade-loading');
         body.style.overflow = 'auto';
     }, 3000);
+}
+
+// Submit Form Handler
+function submitContactForm(e) {
+    e.preventDefault();
+    console.log('Form submitted');
 }
